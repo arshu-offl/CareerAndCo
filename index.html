@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Career and co - Coaching that moves you up a rank</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap navbar">
+    <a href="#top" class="brand">
+      <svg class="brand-mark" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 20L10 12L14.5 16L23 6" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17 6H23V12" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Career and co
+    </a>
+    <nav class="links">
+      <a href="#programs">What you get</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn nav-cta desktop-only">Book a free session</a>
+    <button class="menu-btn" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 5H16M2 9H16M2 13H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker" data-reveal style="animation-delay:.02s"><span class="dot"></span> For school students and job seekers</div>
+        <h1 data-reveal style="animation-delay:.08s">Coaching that moves you up a rank.</h1>
+        <p class="lede" data-reveal style="animation-delay:.16s">
+          Live classes, weekly tests and mock interviews, plus a private space that's just yours — notes, recordings and progress, all in one place. Built for students climbing through school and job seekers closing the gap to an offer.
+        </p>
+        <div class="hero-ctas" data-reveal style="animation-delay:.24s">
+          <a href="#contact" class="btn btn-primary">Book a free session</a>
+          <a href="#pricing" class="btn btn-ghost">See packages</a>
+        </div>
+        <div class="hero-proof" data-reveal style="animation-delay:.32s">
+          <div class="proof-item">
+            <div class="proof-num" id="statStudents">0</div>
+            <div class="proof-label">students &amp; job seekers coached</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-num" id="statCleared">0</div>
+            <div class="proof-label">mock interviews run this year</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-num"><span id="statRating">0.0</span></div>
+            <div class="proof-label">average session rating</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal style="animation-delay:.2s">
+        <div class="hv-head">
+          <span class="hv-title">Your 12-week trajectory</span>
+          <span class="hv-badge"><span class="pulse"></span>Live tracking</span>
+        </div>
+        <div class="chart-box">
+          <svg viewBox="0 0 420 220" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--teal)" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="var(--teal)" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <line x1="0" y1="55" x2="420" y2="55" stroke="var(--border)" stroke-width="1"/>
+            <line x1="0" y1="110" x2="420" y2="110" stroke="var(--border)" stroke-width="1"/>
+            <line x1="0" y1="165" x2="420" y2="165" stroke="var(--border)" stroke-width="1"/>
+            <path id="ascentFill" d="M0,190 C60,185 80,150 120,140 C160,130 180,150 220,120 C260,90 280,100 320,60 C350,32 380,28 420,10 L420,220 L0,220 Z" fill="url(#fillGrad)"/>
+            <path id="ascentPath" d="M0,190 C60,185 80,150 120,140 C160,130 180,150 220,120 C260,90 280,100 320,60 C350,32 380,28 420,10" pathLength="100"/>
+            <g id="ascentDot">
+              <circle cx="0" cy="190" r="9"></circle>
+              <circle cx="0" cy="190" r="4"></circle>
+            </g>
+          </svg>
+        </div>
+        <div class="hv-footer">
+          <div class="hv-stat">
+            <div class="n" id="hvScore">0</div>
+            <div class="l">weekly test average</div>
+          </div>
+          <div class="hv-stat">
+            <div class="n" id="hvAttendance">0%</div>
+            <div class="l">attendance</div>
+          </div>
+          <div class="hv-stat">
+            <div class="n">#<span id="hvRank">—</span></div>
+            <div class="l">class rank</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section id="programs">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Everything happens inside one classroom.</h2>
+        <p class="desc">Syllabus, tests, interviews and your own private notes — students and job seekers use the same app, tuned to what they're preparing for.</p>
+      </div>
+
+      <div class="ledger">
+        <div class="car-row">
+          <button class="car-btn" id="carPrev" aria-label="Previous features" disabled>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="car-btn" id="carNext" aria-label="Next features">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+
+        <div class="ledger-track" id="ledgerTrack">
+          <div class="ledger-card">
+            <div class="li-icon">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M4 3.5h9l3 3V16a.5.5 0 01-.5.5H4a.5.5 0 01-.5-.5V4a.5.5 0 01.5-.5z" stroke="currentColor" stroke-width="1.4"/><path d="M7 8.5h6M7 11.5h6M7 14h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="li-tag">Students</div>
+            <div class="li-name">Syllabus, always in view</div>
+            <div class="li-desc">Every student sees exactly what's covered, what's next, and what's already done.</div>
+          </div>
+
+          <div class="ledger-card">
+            <div class="li-icon">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M10 2.5l1 4.5 4.5 1-4.5 1-1 4.5-1-4.5L4.5 8l4.5-1 1-4.5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M3 15.5h3M14 15.5h3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </div>
+            <div class="li-tag">Students</div>
+            <div class="li-name">Homework, submitted as a PDF</div>
+            <div class="li-desc">Assignments post to the app; students upload their work straight back as a PDF.</div>
+          </div>
+
+          <div class="ledger-card">
+            <div class="li-icon">
+              <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="10" rx="1.2" stroke="currentColor" stroke-width="1.4"/><path d="M7.5 17h5M10 14v3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="10" cy="9" r="2" stroke="currentColor" stroke-width="1.3"/></svg>
+            </div>
+            <div class="li-tag">Students</div>
+            <div class="li-name">Live classes, right in the app</div>
+            <div class="li-desc">No separate meeting links — join, ask questions and rewatch the recording from one place.</div>
+          </div>
+
+          <div class="ledger-card">
+            <div class="li-icon">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M4 8.5l4 4 8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="3" width="14" height="14" rx="3" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+            <div class="li-tag">Students</div>
+            <div class="li-name">Attendance, tracked automatically</div>
+            <div class="li-desc">No roll call — the app logs who joined, for how long, class after class.</div>
+          </div>
+
+          <div class="ledger-card">
+            <div class="li-icon">
+              <svg viewBox="0 0 20 20" fill="none"><rect x="2.5" y="4" width="15" height="10" rx="1.3" stroke="currentColor" stroke-width="1.3"/><path d="M6 16.5h8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M6 8l2.2 2.2L13 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="li-tag">Both</div>
+            <div class="li-name">An AI whiteboard, for working problems live</div>
+            <div class="li-desc">Teachers explain on a shared board that writes, diagrams and solves alongside them.</div>
+          </div>
+
+          <div class="ledger-card">
+            <div class="li-icon">
+              <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="3.5" width="14" height="9" rx="1.2" stroke="currentColor" stroke-width="1.3"/><path d="M7.5 16.5h5M10 12.5v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M6 8h5M6 10h3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </div>
+            <div class="li-tag">Both</div>
+            <div class="li-name">A classroom built around your slides</div>
+            <div class="li-desc">Upload a PPT and teach straight from it — no switching between apps mid-class.</div>
+          </div>
+
+          <div class="ledger-card">
+            <div class="li-icon">
+              <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M6.5 7.5h7M6.5 10.5h7M6.5 13.5h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </div>
+            <div class="li-tag">Students</div>
+            <div class="li-name">Weekly MCQ tests, scored instantly</div>
+            <div class="li-desc">Short tests every week, with results and a full score history the moment they submit.</div>
+          </div>
+
+          <div class="ledger-card">
+            <div class="li-icon">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M10 2.5l1.9 3.9 4.3.6-3.1 3 .7 4.3-3.8-2-3.8 2 .7-4.3-3.1-3 4.3-.6L10 2.5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="li-tag">Students</div>
+            <div class="li-name">A leaderboard, updated every week</div>
+            <div class="li-desc">The week's best performer is named in the app — a small push that keeps effort visible.</div>
+          </div>
+
+          <div class="ledger-card">
+            <div class="li-icon">
+              <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3" stroke="currentColor" stroke-width="1.3"/><path d="M4 17c0-3 2.7-5 6-5s6 2 6 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </div>
+            <div class="li-tag">Job seekers</div>
+            <div class="li-name">1:1 mock interviews, group discussions &amp; written aptitude</div>
+            <div class="li-desc">Practice the three rounds companies actually run, with feedback after each one.</div>
+          </div>
+
+          <div class="ledger-card">
+            <div class="li-icon">
+              <svg viewBox="0 0 20 20" fill="none"><rect x="4" y="2.5" width="12" height="15" rx="2" stroke="currentColor" stroke-width="1.3"/><circle cx="10" cy="14" r="0.9" fill="currentColor"/></svg>
+            </div>
+            <div class="li-tag">Both</div>
+            <div class="li-name">A private server, just for you</div>
+            <div class="li-desc">Your own notes and video recordings, kept separate from everyone else's — not a shared drive.</div>
+          </div>
+        </div>
+
+        <div class="car-dots" id="carDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>From enrolling to interview-ready.</h2>
+        <p class="desc">The same four stages, whether you're prepping for exams or for offers.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-n">01</div>
+          <h3>Enroll &amp; get your server</h3>
+          <p>Pick a package, and your private space for notes and recordings is set up the same day.</p>
+        </div>
+        <div class="step">
+          <div class="step-n">02</div>
+          <h3>Attend &amp; practice</h3>
+          <p>Join live classes, work through the whiteboard sessions, and submit homework as you go.</p>
+        </div>
+        <div class="step">
+          <div class="step-n">03</div>
+          <h3>Test weekly, track rank</h3>
+          <p>A short MCQ test each week — see your score, your history, and where you stand.</p>
+        </div>
+        <div class="step">
+          <div class="step-n">04</div>
+          <h3>Go interview-ready</h3>
+          <p>Move into mock interviews, group discussions and aptitude rounds when you're ready for them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERBOARD PREVIEW -->
+  <section id="leaderboard">
+    <div class="wrap lb-wrap">
+      <div>
+        <div class="section-head" style="margin-bottom:18px;">
+          <h2>Effort doesn't go unnoticed.</h2>
+        </div>
+        <p class="desc" style="color:var(--ink-muted); font-size:15.5px; max-width:42ch;">
+          Every weekly test rolls into a class leaderboard. Students see exactly how they compare, and the best performer of the week gets named in the app — not buried in a report nobody opens.
+        </p>
+      </div>
+      <div class="lb-card">
+        <div class="lb-card-head">
+          <span class="t">This week's leaderboard</span>
+          <span class="u">Batch: Grade 11 — Physics</span>
+        </div>
+        <div id="lbList">
+          <div class="lb-row is-first">
+            <div class="lb-rank">1</div>
+            <div class="lb-avatar">A</div>
+            <div class="lb-name">Aisha R.<span class="sub">12-week streak</span></div>
+            <div class="lb-bar-wrap"><div class="lb-bar" data-target="96"></div></div>
+            <div class="lb-score">96</div>
+          </div>
+          <div class="lb-row">
+            <div class="lb-rank">2</div>
+            <div class="lb-avatar">K</div>
+            <div class="lb-name">Karthik S.<span class="sub">Up 3 ranks</span></div>
+            <div class="lb-bar-wrap"><div class="lb-bar" data-target="91"></div></div>
+            <div class="lb-score">91</div>
+          </div>
+          <div class="lb-row">
+            <div class="lb-rank">3</div>
+            <div class="lb-avatar">M</div>
+            <div class="lb-name">Meera P.</div>
+            <div class="lb-bar-wrap"><div class="lb-bar" data-target="88"></div></div>
+            <div class="lb-score">88</div>
+          </div>
+          <div class="lb-row">
+            <div class="lb-rank">4</div>
+            <div class="lb-avatar">R</div>
+            <div class="lb-name">Rohan D.</div>
+            <div class="lb-bar-wrap"><div class="lb-bar" data-target="84"></div></div>
+            <div class="lb-score">84</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Packages for where you're headed.</h2>
+        <p class="desc">Every package includes live classes and your private server. Pick the one that matches what you're preparing for.</p>
+      </div>
+
+      <div class="pricing">
+        <div class="plan">
+          <div class="plan-for">For school &amp; exam students</div>
+          <div class="plan-name">Foundation</div>
+          <div class="plan-price"><span class="amt">₹2,499</span><span class="per">/ month</span></div>
+          <div class="plan-desc">Steady, well-tracked progress through the syllabus, week by week.</div>
+          <ul class="plan-feats">
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Live classes &amp; recordings</li>
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Full syllabus &amp; homework, with PDF upload</li>
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Automatic attendance tracking</li>
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Weekly MCQ tests &amp; score history</li>
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Class leaderboard</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost">Start with Foundation</a>
+        </div>
+
+        <div class="plan is-featured">
+          <div class="badge-pop">Most chosen</div>
+          <div class="plan-for">For placement &amp; interview prep</div>
+          <div class="plan-name">Interview Ready</div>
+          <div class="plan-price"><span class="amt">₹4,999</span><span class="per">/ month</span></div>
+          <div class="plan-desc">Structured practice for every round a hiring process actually runs.</div>
+          <ul class="plan-feats">
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>1:1 mock interviews, with recorded feedback</li>
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Group discussion sessions</li>
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Written aptitude tests &amp; scoring</li>
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Private server for notes &amp; session recordings</li>
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>AI whiteboard walkthroughs</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Start with Interview Ready</a>
+        </div>
+
+        <div class="plan">
+          <div class="plan-for">For the full run</div>
+          <div class="plan-name">Full Ascent</div>
+          <div class="plan-price"><span class="amt">₹6,999</span><span class="per">/ month</span></div>
+          <div class="plan-desc">Everything in Foundation and Interview Ready, under one plan.</div>
+          <ul class="plan-feats">
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Foundation</li>
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Interview Ready</li>
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>PPT-based classroom sessions</li>
+            <li><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority scheduling for mock interviews</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost">Start with Full Ascent</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2>See it before you commit to it.</h2>
+          <p>Book a free session — sit in on a live class, try the weekly test, and get a walkthrough of your private server before choosing a package.</p>
+        </div>
+        <form class="cta-form" onsubmit="return false;">
+          <input type="text" placeholder="Full name" aria-label="Full name">
+          <input type="tel" placeholder="Phone number" aria-label="Phone number">
+          <select aria-label="I'm looking for">
+            <option>I'm a school / exam student</option>
+            <option>I'm preparing for interviews</option>
+            <option>Not sure yet</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Book my free session</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="brand">
+          <svg class="brand-mark" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 20L10 12L14.5 16L23 6" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17 6H23V12" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Career and co
+        </a>
+        <p>Coaching for school, exams and interviews — live classes, weekly tests, and a private space of your own.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Programs</h4>
+          <a href="#pricing">Foundation</a>
+          <a href="#pricing">Interview Ready</a>
+          <a href="#pricing">Full Ascent</a>
+        </div>
+        <div class="foot-col">
+          <h4>Ascent</h4>
+          <a href="#programs">What you get</a>
+          <a href="#how">How it works</a>
+          <a href="#contact">Book a session</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Ascent Coaching. All rights reserved.</span>
+      <span>Made for students and job seekers, one rank at a time.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Hero reveal sequence
+  document.querySelectorAll('[data-reveal]').forEach(function(el){
+    el.classList.add('is-in');
+  });
+
+  function countUp(el, target, opts){
+    opts = opts || {};
+    var duration = opts.duration || 1400;
+    var suffix = opts.suffix || '';
+    var decimals = opts.decimals || 0;
+    if(reduced){
+      el.textContent = target.toFixed(decimals) + suffix;
+      return;
+    }
+    var start = null;
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = target * eased;
+      el.textContent = val.toFixed(decimals) + suffix;
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  function animateAscent(){
+    var path = document.getElementById('ascentPath');
+    var dot = document.getElementById('ascentDot');
+    var len = 100; // pathLength normalized
+
+    if(reduced){
+      path.style.strokeDasharray = 'none';
+      var real = path.getTotalLength();
+      var pt = path.getPointAtLength(real);
+      dot.setAttribute('transform', 'translate(' + pt.x + ',' + pt.y + ')');
+      return;
+    }
+
+    path.style.strokeDasharray = len;
+    path.style.strokeDashoffset = len;
+
+    var duration = 1800;
+    var start = null;
+    var realLen = path.getTotalLength();
+
+    function frame(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start) / duration, 1);
+      var eased = p < 0.5 ? 4*p*p*p : 1 - Math.pow(-2*p+2,3)/2;
+      path.style.strokeDashoffset = len - (len * eased);
+      var pt = path.getPointAtLength(realLen * eased);
+      dot.setAttribute('transform', 'translate(' + pt.x + ',' + pt.y + ')');
+      if(p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+
+  function animateLeaderboard(){
+    document.querySelectorAll('.lb-bar').forEach(function(bar, i){
+      var target = parseFloat(bar.getAttribute('data-target')) || 0;
+      if(reduced){
+        bar.style.width = target + '%';
+        return;
+      }
+      setTimeout(function(){
+        bar.style.transition = 'width 1s cubic-bezier(.19,1,.22,1)';
+        bar.style.width = target + '%';
+      }, 120 * i);
+    });
+  }
+
+  function runHero(){
+    countUp(document.getElementById('statStudents'), 2400, {suffix:'+'});
+    countUp(document.getElementById('statCleared'), 180, {suffix:'+'});
+    countUp(document.getElementById('statRating'), 4.8, {decimals:1});
+    countUp(document.getElementById('hvScore'), 88, {suffix:'%'});
+    countUp(document.getElementById('hvAttendance'), 96, {suffix:'%'});
+    countUp(document.getElementById('hvRank'), 3, {decimals:0});
+    animateAscent();
+  }
+
+  window.addEventListener('load', function(){
+    runHero();
+  });
+
+  // Feature carousel
+  (function(){
+    var track = document.getElementById('ledgerTrack');
+    var prevBtn = document.getElementById('carPrev');
+    var nextBtn = document.getElementById('carNext');
+    var dotsWrap = document.getElementById('carDots');
+    var section = document.getElementById('programs');
+    if(!track) return;
+
+    var cards = Array.prototype.slice.call(track.children);
+    var dots = cards.map(function(_, i){
+      var d = document.createElement('span');
+      d.className = 'car-dot';
+      if(i === 0) d.classList.add('is-active');
+      dotsWrap.appendChild(d);
+      return d;
+    });
+
+    var AUTOPLAY_MS = 3200;
+    var timer = null;
+    var inView = true;
+
+    function cardStep(){
+      var card = cards[0];
+      var style = getComputedStyle(track);
+      var gap = parseFloat(style.columnGap || style.gap || 16);
+      return card.getBoundingClientRect().width + gap;
+    }
+
+    function currentIndex(){
+      return Math.round(track.scrollLeft / cardStep());
+    }
+
+    function goTo(i, smooth){
+      var wrapped = (i + cards.length) % cards.length;
+      track.scrollTo({ left: cardStep() * wrapped, behavior: (reduced || !smooth) ? 'auto' : 'smooth' });
+    }
+
+    function updateState(){
+      var idx = currentIndex();
+      dots.forEach(function(d, i){ d.classList.toggle('is-active', i === idx); });
+    }
+
+    function stepForward(){
+      var idx = currentIndex();
+      var atEnd = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+      goTo(atEnd ? 0 : idx + 1, true);
+    }
+    function stepBack(){
+      var idx = currentIndex();
+      goTo(idx === 0 ? cards.length - 1 : idx - 1, true);
+    }
+
+    function play(){
+      if(reduced || !inView) return;
+      stop();
+      timer = setInterval(stepForward, AUTOPLAY_MS);
+    }
+    function stop(){
+      if(timer){ clearInterval(timer); timer = null; }
+    }
+    function restart(){ stop(); play(); }
+
+    prevBtn.addEventListener('click', function(){ stepBack(); restart(); });
+    nextBtn.addEventListener('click', function(){ stepForward(); restart(); });
+
+    var ticking = false;
+    track.addEventListener('scroll', function(){
+      if(!ticking){
+        window.requestAnimationFrame(function(){ updateState(); ticking = false; });
+        ticking = true;
+      }
+    });
+
+    dots.forEach(function(d, i){
+      d.style.cursor = 'pointer';
+      d.addEventListener('click', function(){ goTo(i, true); restart(); });
+    });
+
+    // Pause on hover, touch, or keyboard focus within the carousel
+    [track, prevBtn, nextBtn].forEach(function(el){
+      el.addEventListener('mouseenter', stop);
+      el.addEventListener('mouseleave', play);
+      el.addEventListener('touchstart', stop, { passive: true });
+      el.addEventListener('touchend', function(){ setTimeout(play, 1500); }, { passive: true });
+      el.addEventListener('focusin', stop);
+      el.addEventListener('focusout', play);
+    });
+
+    // Only autoplay while the section is actually on screen
+    if('IntersectionObserver' in window && section){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          inView = entry.isIntersecting;
+          if(inView) play(); else stop();
+        });
+      }, { threshold: 0.4 });
+      io.observe(section);
+    }
+
+    window.addEventListener('resize', updateState);
+    updateState();
+    play();
+  })();
+
+  // Trigger leaderboard bars when section scrolls into view
+  var lb = document.getElementById('leaderboard');
+  if('IntersectionObserver' in window && lb){
+    var seen = false;
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting && !seen){
+          seen = true;
+          animateLeaderboard();
+          io.disconnect();
+        }
+      });
+    }, {threshold: 0.3});
+    io.observe(lb);
+  } else {
+    animateLeaderboard();
+  }
+})();
+</script>
+
+</body>
+</html>
